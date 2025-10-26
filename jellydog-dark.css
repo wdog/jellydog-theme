@@ -1,0 +1,228 @@
+/*
+ * Jellydog Dark Theme for Jellyfin
+ * A custom dark theme with enhanced contrast and modern styling
+ */
+
+/* ===== Color Palette ===== */
+:root {
+    /* Primary Background Colors */
+    --primary-bg: #0a0a0a;
+    --secondary-bg: #141414;
+    --tertiary-bg: #1e1e1e;
+    --card-bg: #1a1a1a;
+
+    /* Accent Colors */
+    --accent-primary: #3b82f6;
+    --accent-hover: #2563eb;
+    --accent-light: #60a5fa;
+
+    /* Text Colors */
+    --text-primary: #e5e5e5;
+    --text-secondary: #a3a3a3;
+    --text-muted: #737373;
+
+    /* Border & Divider Colors */
+    --border-color: #2a2a2a;
+    --divider-color: #262626;
+
+    /* Status Colors */
+    --success: #10b981;
+    --warning: #f59e0b;
+    --error: #ef4444;
+    --info: #3b82f6;
+}
+
+/* ===== Base Styles ===== */
+body {
+    background-color: var(--primary-bg) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Main Content Area */
+.mainAnimatedPage,
+.view,
+.mainDrawer-scrollContainer {
+    background-color: var(--primary-bg) !important;
+}
+
+/* ===== Navigation & Sidebar ===== */
+.mainDrawer,
+.navDrawer {
+    background-color: var(--secondary-bg) !important;
+}
+
+.navMenuOption:hover,
+.listItem:hover {
+    background-color: var(--tertiary-bg) !important;
+}
+
+.navMenuOption-selected {
+    background-color: var(--accent-primary) !important;
+}
+
+/* ===== Cards & Containers ===== */
+.cardBox,
+.itemDetailPage,
+.detailSection,
+.verticalSection {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+}
+
+.cardOverlayContainer {
+    background: linear-gradient(180deg, transparent 0%, rgba(10, 10, 10, 0.9) 100%) !important;
+}
+
+.cardText {
+    color: var(--text-primary) !important;
+}
+
+.cardText-secondary {
+    color: var(--text-secondary) !important;
+}
+
+/* ===== Buttons ===== */
+.button-flat,
+.paper-icon-button-light {
+    color: var(--text-primary) !important;
+}
+
+.button-flat:hover,
+.paper-icon-button-light:hover {
+    background-color: var(--tertiary-bg) !important;
+}
+
+.raised {
+    background-color: var(--accent-primary) !important;
+    color: white !important;
+}
+
+.raised:hover {
+    background-color: var(--accent-hover) !important;
+}
+
+/* ===== Forms & Inputs ===== */
+.inputContainer input,
+.emby-input,
+.emby-textarea {
+    background-color: var(--tertiary-bg) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 4px !important;
+}
+
+.inputContainer input:focus,
+.emby-input:focus,
+.emby-textarea:focus {
+    border-color: var(--accent-primary) !important;
+}
+
+.selectContainer select,
+.emby-select {
+    background-color: var(--tertiary-bg) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+/* ===== Backdrop & Overlays ===== */
+.backdropImage {
+    opacity: 0.3 !important;
+}
+
+.dialog,
+.dialogContent {
+    background-color: var(--secondary-bg) !important;
+    color: var(--text-primary) !important;
+}
+
+/* ===== Headers ===== */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary) !important;
+}
+
+.pageTitle {
+    color: var(--text-primary) !important;
+}
+
+.sectionTitle {
+    color: var(--text-primary) !important;
+    border-bottom: 2px solid var(--border-color) !important;
+}
+
+/* ===== Media Player ===== */
+.videoOsdBottom {
+    background: linear-gradient(0deg, rgba(10, 10, 10, 0.95) 0%, transparent 100%) !important;
+}
+
+.osdControls {
+    color: var(--text-primary) !important;
+}
+
+.sliderBubble {
+    background-color: var(--accent-primary) !important;
+}
+
+/* ===== Progress Bars ===== */
+.itemProgressBar {
+    background-color: var(--accent-primary) !important;
+}
+
+.itemProgressBarForeground {
+    background-color: var(--accent-light) !important;
+}
+
+/* ===== Tables & Lists ===== */
+.listItem {
+    background-color: var(--card-bg) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
+.listItem:hover {
+    background-color: var(--tertiary-bg) !important;
+}
+
+/* ===== Scrollbars ===== */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary-bg);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border-color);
+}
+
+/* ===== Context Menu ===== */
+.paperList {
+    background-color: var(--secondary-bg) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.listItem-focusscale:hover {
+    background-color: var(--tertiary-bg) !important;
+}
+
+/* ===== Tags & Badges ===== */
+.itemTag {
+    background-color: var(--tertiary-bg) !important;
+    color: var(--text-secondary) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+/* ===== Home Screen Sections ===== */
+.homeSectionsContainer {
+    background-color: var(--primary-bg) !important;
+}
+
+.section {
+    margin-bottom: 2em;
+}
